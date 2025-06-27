@@ -1,0 +1,52 @@
+{
+  "customDataSourceType": "frontastic/product-list",
+  "name": "Product list",
+  "category": "Products",
+  "icon": "view_list",
+  "schema": [
+    {
+      "name": "Configuration",
+      "fields": [
+        {
+          "label": "Text query",
+          "field": "query",
+          "type": "text",
+          "default": "",
+          "translatable": false
+        },
+        {
+          "label": "Localized Text query",
+          "field": "lquery",
+          "type": "text",
+          "default": "",
+          "translatable": false
+        },
+        {
+          "label": "Product IDs",
+          "field": "productIds",
+          "type": "text",
+          "default": "",
+          "translatable": false
+        },
+        {
+          "label": "Product SKUs",
+          "field": "productSkus",
+          "type": "text",
+          "default": "",
+          "translatable": false
+        }
+      ]
+    },
+    {
+      "name": "Filters",
+      "fields": [
+        {
+          "label": "Product dynamic filters",
+          "field": "productFilters",
+          "type": "dynamic-filter",
+          "dynamicFilterEndpoint": "/frontastic/action/product/productFilters"
+        }
+      ]
+    }
+  ]
+}
