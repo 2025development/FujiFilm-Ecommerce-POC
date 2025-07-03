@@ -10,7 +10,7 @@ export const fetchCache = 'force-no-store';
 export default async function Page(props: PageProps) {
   const searchParams = await props.searchParams;
   const params = await props.params;
-  const { locale, previewId } = params;
+  const { locale, previewId } = params; 
 
   sdk.defaultConfigure(locale);
 
@@ -36,5 +36,6 @@ export default async function Page(props: PageProps) {
 
       <div id="react-modal-custom-portal" />
     </div>
+    /*testing the flow*/
   );
 }
