@@ -10,7 +10,7 @@ import { AccountFetcher } from '@Commerce-commercetools/utils/AccountFetcher';
 import { AccountAuthenticationError } from '@Commerce-commercetools/errors/AccountAuthenticationError';
 
 type ActionHook = (request: Request, actionContext: ActionContext) => Promise<Response>;
-
+//For Testing Purpose
 export type AccountRegisterBody = {
   email?: string;
   password?: string;
